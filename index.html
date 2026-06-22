@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DS Web Solution — Desarrollo Web Profesional</title>
+    <meta name="description" content="DS Web Solution: Creamos sitios web modernos, rápidos y visualmente impactantes. Landing pages, e-commerce, aplicaciones web y más.">
+    <meta name="keywords" content="desarrollo web, landing pages, e-commerce, diseño web, PWA, WordPress, UI/UX">
+    <meta name="author" content="DS Web Solution">
+    <meta property="og:title" content="DS Web Solution — Desarrollo Web Profesional">
+    <meta property="og:description" content="Transformamos ideas en experiencias digitales excepcionales.">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/png" href="assets/images/ds-logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- ==================== NAVBAR ==================== -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <img src="assets/images/ds-logo.png" alt="DS Web Solution Logo" class="nav-logo-img">
+                <span class="nav-logo-text">DS <span class="accent">Web Solution</span></span>
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#services">
+                    <span class="lang-es">Servicios</span>
+                    <span class="lang-en">Services</span>
+                </a></li>
+                <li><a href="#why-us">
+                    <span class="lang-es">Nosotros</span>
+                    <span class="lang-en">About</span>
+                </a></li>
+                <li><a href="#process">
+                    <span class="lang-es">Proceso</span>
+                    <span class="lang-en">Process</span>
+                </a></li>
+                <li><a href="#portfolio">
+                    <span class="lang-es">Portafolio</span>
+                    <span class="lang-en">Portfolio</span>
+                </a></li>
+                <li><a href="#testimonials">
+                    <span class="lang-es">Testimonios</span>
+                    <span class="lang-en">Testimonials</span>
+                </a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="lang-switch" id="langSwitch" aria-label="Switch Language">
+                    <span class="lang-es">EN</span>
+                    <span class="lang-en">ES</span>
+                </button>
+                <a href="#cta" class="nav-cta">
+                    <span class="lang-es">Cotizar</span>
+                    <span class="lang-en">Get Quote</span>
+                </a>
+            </div>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO ==================== -->
+    <section id="hero">
+        <div class="hero-bg">
+            <div class="hero-grid"></div>
+            <div class="hero-glow hero-glow-1"></div>
+            <div class="hero-glow hero-glow-2"></div>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-badge" data-animate>
+                <i class="ri-flashlight-line"></i>
+                <span class="lang-es">Soluciones Web de Alto Impacto</span>
+                <span class="lang-en">High-Impact Web Solutions</span>
+            </div>
+
+            <h1 class="hero-title" data-animate>
+                <span class="lang-es">Transformamos Ideas en<br><span class="gradient-text">Experiencias Digitales</span></span>
+                <span class="lang-en">We Transform Ideas into<br><span class="gradient-text">Digital Experiences</span></span>
+            </h1>
+
+            <p class="hero-subtitle" data-animate>
+                <span class="lang-es">Creamos sitios web modernos, rápidos y visualmente impactantes que impulsan el crecimiento de tu negocio.</span>
+                <span class="lang-en">We create modern, fast, and visually stunning websites that drive your business growth.</span>
+            </p>
+
+            <div class="hero-buttons" data-animate>
+                <a href="#services" class="btn btn-primary">
+                    <span class="lang-es">Ver Servicios</span>
+                    <span class="lang-en">View Services</span>
+                    <i class="ri-arrow-right-line"></i>
+                </a>
+                <a href="#cta" class="btn btn-secondary">
+                    <span class="lang-es">Solicitar Cotización</span>
+                    <span class="lang-en">Request a Quote</span>
+                </a>
+            </div>
+
+            <div class="hero-stats" data-animate>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="50">0</span>
+                    <span class="stat-suffix">+</span>
+                    <span class="stat-label">
+                        <span class="lang-es">Proyectos Entregados</span>
+                        <span class="lang-en">Projects Delivered</span>
+                    </span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="30">0</span>
+                    <span class="stat-suffix">+</span>
+                    <span class="stat-label">
+                        <span class="lang-es">Clientes Satisfechos</span>
+                        <span class="lang-en">Happy Clients</span>
+                    </span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="3">0</span>
+                    <span class="stat-suffix">+</span>
+                    <span class="stat-label">
+                        <span class="lang-es">Años de Experiencia</span>
+                        <span class="lang-en">Years of Experience</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SERVICES ==================== -->
+    <section id="services" class="section">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="section-tag">
+                    <span class="lang-es">Lo Que Hacemos</span>
+                    <span class="lang-en">What We Do</span>
+                </span>
+                <h2 class="section-title">
+                    <span class="lang-es">Nuestros <span class="gradient-text">Servicios</span></span>
+                    <span class="lang-en">Our <span class="gradient-text">Services</span></span>
+                </h2>
+                <p class="section-description">
+                    <span class="lang-es">Soluciones digitales a medida para impulsar tu negocio al siguiente nivel.</span>
+                    <span class="lang-en">Custom digital solutions to take your business to the next level.</span>
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service 1: Landing Pages -->
+                <div class="service-card" data-animate>
+                    <div class="service-icon">
+                        <i class="ri-layout-masonry-line"></i>
+                    </div>
+                    <h3 class="service-title">Landing Pages</h3>
+                    <p class="service-description">
+                        <span class="lang-es">Páginas de aterrizaje optimizadas para conversión que capturan leads y generan resultados medibles.</span>
+                        <span class="lang-en">Conversion-optimized landing pages that capture leads and drive measurable results.</span>
+                    </p>
+                    <a href="#cta" class="service-link">
+                        <span class="lang-es">Cotizar</span>
+                        <span class="lang-en">Get Quote</span>
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+                </div>
+
+                <!-- Service 2: E-commerce -->
+                <div class="service-card" data-animate>
+                    <div class="service-icon">
+                        <i class="ri-shopping-cart-2-line"></i>
+                    </div>
+                    <h3 class="service-title">
+                        <span class="lang-es">Tiendas Online</span>
+                        <span class="lang-en">Online Stores</span>
+                    </h3>
+                    <p class="service-description">
+                        <span class="lang-es">Tiendas digitales completas con carrito de compras, pasarelas de pago y gestión de inventario.</span>
+                        <span class="lang-en">Complete digital stores with shopping cart, payment gateways, and inventory management.</span>
+                    </p>
+                    <a href="#cta" class="service-link">
+                        <span class="lang-es">Cotizar</span>
+                        <span class="lang-en">Get Quote</span>
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+                </div>
+
+                <!-- Service 3: Corporate Websites -->
+                <div class="service-card" data-animate>
+                    <div class="service-icon">
+                        <i class="ri-global-line"></i>
+                    </div>
+                    <h3 class="service-title">
+                        <span class="lang-es">Sitios Corporativos</span>
+                        <span class="lang-en">Corporate Websites</span>
+                    </h3>
+                    <p class="service-description">
+                        <span class="lang-es">Presencia digital profesional que refleja la identidad y valores de tu empresa.</span>
+                        <span class="lang-en">Professional digital presence that reflects your company's identity and values.</span>
+                    </p>
+                    <a href="#cta" class="service-link">
+                        <span class="lang-es">Cotizar</span>
+                        <span class="lang-en">Get Quote</span>
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+                </div>
+
+                <!-- Service 4: Web Applications (PWA) -->
+                <div class="service-card" data-animate>
+                    <div class="service-icon">
+                        <i class="ri-smartphone-line"></i>
+                    </div>
+                    <h3 class="service-title">
+                        <span class="lang-es">Aplicaciones Web</span>
+                        <span class="lang-en">Web Applications</span>
+                    </h3>
+                    <p class="service-description">
+                        <span class="lang-es">Apps web progresivas, rápidas y responsivas que funcionan como aplicaciones nativas.</span>
+                        <span class="lang-en">Progressive, fast, and responsive web apps that work like native applications.</span>
+                    </p>
+                    <a href="#cta" class="service-link">
+                        <span class="lang-es">Cotizar</span>
+                        <span class="lang-en">Get Quote</span>
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+                </div>
+
+                <!-- Service 5: UI/UX Design -->
+                <div class="service-card" data-animate>
+                    <div class="service-icon">
+                        <i class="ri-palette-line"></i>
+                    </div>
+                    <h3 class="service-title">
+                        <span class="lang-es">Diseño UI/UX</span>
+                        <span class="lang-en">UI/UX Design</span>
+                    </h3>
+                    <p class="service-description">
+                        <span class="lang-es">Interfaces atractivas y experiencias de usuario intuitivas que enamoran a tus visitantes.</span>
+                        <span class="lang-en">Attractive interfaces and intuitive user experiences that delight your visitors.</span>
+                    </p>
+                    <a href="#cta" class="service-link">
+                        <span class="lang-es">Cotizar</span>
+                        <span class="lang-en">Get Quote</span>
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+                </div>
+
+                <!-- Service 6: Web Maintenance -->
+                <div class="service-card" data-animate>
+                    <div class="service-icon">
+                        <i class="ri-tools-line"></i>
+                    </div>
+                    <h3 class="service-title">
+                        <span class="lang-es">Mantenimiento Web</span>
+                        <span class="lang-en">Web Maintenance</span>
+                    </h3>
+                    <p class="service-description">
+                        <span class="lang-es">Soporte técnico continuo, actualizaciones de seguridad y monitoreo de rendimiento 24/7.</span>
+                        <span class="lang-en">Continuous technical support, security updates, and 24/7 performance monitoring.</span>
+                    </p>
+                    <a href="#cta" class="service-link">
+                        <span class="lang-es">Cotizar</span>
+                        <span class="lang-en">Get Quote</span>
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+                </div>
+
+                <!-- Service 7: WordPress -->
+                <div class="service-card" data-animate>
+                    <div class="service-icon">
+                        <i class="ri-wordpress-line"></i>
+                    </div>
+                    <h3 class="service-title">
+                        <span class="lang-es">Desarrollo WordPress</span>
+                        <span class="lang-en">WordPress Development</span>
+                    </h3>
+                    <p class="service-description">
+                        <span class="lang-es">Sitios personalizados con WordPress, temas a medida y plugins optimizados para tu negocio.</span>
+                        <span class="lang-en">Custom WordPress sites, tailored themes, and optimized plugins for your business.</span>
+                    </p>
+                    <a href="#cta" class="service-link">
+                        <span class="lang-es">Cotizar</span>
+                        <span class="lang-en">Get Quote</span>
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== WHY CHOOSE US ==================== -->
+    <section id="why-us" class="section">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="section-tag">
+                    <span class="lang-es">Nuestra Diferencia</span>
+                    <span class="lang-en">Our Difference</span>
+                </span>
+                <h2 class="section-title">
+                    <span class="lang-es">¿Por Qué <span class="gradient-text">Elegirnos</span>?</span>
+                    <span class="lang-en">Why <span class="gradient-text">Choose Us</span>?</span>
+                </h2>
+                <p class="section-description">
+                    <span class="lang-es">Combinamos creatividad, tecnología y compromiso para entregar resultados excepcionales.</span>
+                    <span class="lang-en">We combine creativity, technology, and commitment to deliver exceptional results.</span>
+                </p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-item" data-animate>
+                    <div class="feature-icon">
+                        <i class="ri-speed-line"></i>
+                    </div>
+                    <h3>
+                        <span class="lang-es">Entrega Rápida</span>
+                        <span class="lang-en">Fast Delivery</span>
+                    </h3>
+                    <p>
+                        <span class="lang-es">Cumplimos plazos sin comprometer la calidad. Tu proyecto, a tiempo y perfecto.</span>
+                        <span class="lang-en">We meet deadlines without compromising quality. Your project, on time and perfect.</span>
+                    </p>
+                </div>
+
+                <div class="feature-item" data-animate>
+                    <div class="feature-icon">
+                        <i class="ri-customer-service-2-line"></i>
+                    </div>
+                    <h3>
+                        <span class="lang-es">Soporte 24/7</span>
+                        <span class="lang-en">24/7 Support</span>
+                    </h3>
+                    <p>
+                        <span class="lang-es">Estamos disponibles cuando nos necesites. Tu tranquilidad es nuestra prioridad.</span>
+                        <span class="lang-en">We're available whenever you need us. Your peace of mind is our priority.</span>
+                    </p>
+                </div>
+
+                <div class="feature-item" data-animate>
+                    <div class="feature-icon">
+                        <i class="ri-code-s-slash-line"></i>
+                    </div>
+                    <h3>
+                        <span class="lang-es">Código Limpio</span>
+                        <span class="lang-en">Clean Code</span>
+                    </h3>
+                    <p>
+                        <span class="lang-es">Código mantenible, escalable y bien documentado. Construido para crecer contigo.</span>
+                        <span class="lang-en">Maintainable, scalable, and well-documented code. Built to grow with you.</span>
+                    </p>
+                </div>
+
+                <div class="feature-item" data-animate>
+                    <div class="feature-icon">
+                        <i class="ri-magic-line"></i>
+                    </div>
+                    <h3>
+                        <span class="lang-es">Diseño Premium</span>
+                        <span class="lang-en">Premium Design</span>
+                    </h3>
+                    <p>
+                        <span class="lang-es">Cada píxel cuenta. Diseños que impresionan y experiencias que enamoran.</span>
+                        <span class="lang-en">Every pixel counts. Designs that impress and experiences that captivate.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PROCESS ==================== -->
+    <section id="process" class="section">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="section-tag">
+                    <span class="lang-es">Cómo Trabajamos</span>
+                    <span class="lang-en">How We Work</span>
+                </span>
+                <h2 class="section-title">
+                    <span class="lang-es">Nuestro <span class="gradient-text">Proceso</span></span>
+                    <span class="lang-en">Our <span class="gradient-text">Process</span></span>
+                </h2>
+                <p class="section-description">
+                    <span class="lang-es">Un flujo de trabajo estructurado para llevar tu proyecto del concepto al lanzamiento.</span>
+                    <span class="lang-en">A structured workflow to take your project from concept to launch.</span>
+                </p>
+            </div>
+
+            <div class="process-timeline">
+                <div class="process-step" data-animate>
+                    <div class="step-number">01</div>
+                    <div class="step-icon"><i class="ri-chat-3-line"></i></div>
+                    <div class="step-content">
+                        <h3>
+                            <span class="lang-es">Consulta</span>
+                            <span class="lang-en">Consultation</span>
+                        </h3>
+                        <p>
+                            <span class="lang-es">Escuchamos tus ideas, entendemos tus objetivos y definimos el alcance del proyecto.</span>
+                            <span class="lang-en">We listen to your ideas, understand your goals, and define the project scope.</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="process-step" data-animate>
+                    <div class="step-number">02</div>
+                    <div class="step-icon"><i class="ri-pencil-ruler-2-line"></i></div>
+                    <div class="step-content">
+                        <h3>
+                            <span class="lang-es">Diseño</span>
+                            <span class="lang-en">Design</span>
+                        </h3>
+                        <p>
+                            <span class="lang-es">Creamos prototipos visuales y wireframes para dar vida a tu visión antes de codificar.</span>
+                            <span class="lang-en">We create visual prototypes and wireframes to bring your vision to life before coding.</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="process-step" data-animate>
+                    <div class="step-number">03</div>
+                    <div class="step-icon"><i class="ri-code-s-slash-line"></i></div>
+                    <div class="step-content">
+                        <h3>
+                            <span class="lang-es">Desarrollo</span>
+                            <span class="lang-en">Development</span>
+                        </h3>
+                        <p>
+                            <span class="lang-es">Construimos tu sitio con las mejores tecnologías, priorizando rendimiento y calidad.</span>
+                            <span class="lang-en">We build your site with the best technologies, prioritizing performance and quality.</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="process-step" data-animate>
+                    <div class="step-number">04</div>
+                    <div class="step-icon"><i class="ri-rocket-2-line"></i></div>
+                    <div class="step-content">
+                        <h3>
+                            <span class="lang-es">Lanzamiento</span>
+                            <span class="lang-en">Launch</span>
+                        </h3>
+                        <p>
+                            <span class="lang-es">Desplegamos, optimizamos y te acompañamos en el éxito de tu proyecto digital.</span>
+                            <span class="lang-en">We deploy, optimize, and support you in the success of your digital project.</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PORTFOLIO ==================== -->
+    <section id="portfolio" class="section">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="section-tag">
+                    <span class="lang-es">Nuestro Trabajo</span>
+                    <span class="lang-en">Our Work</span>
+                </span>
+                <h2 class="section-title">
+                    <span class="lang-es">Proyectos <span class="gradient-text">Destacados</span></span>
+                    <span class="lang-en">Featured <span class="gradient-text">Projects</span></span>
+                </h2>
+                <p class="section-description">
+                    <span class="lang-es">Una muestra de proyectos que hablan por nuestro compromiso con la excelencia.</span>
+                    <span class="lang-en">A showcase of projects that speak to our commitment to excellence.</span>
+                </p>
+            </div>
+
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-animate>
+                    <div class="portfolio-image gradient-1">
+                        <div class="portfolio-mockup">
+                            <div class="mockup-dots"><span></span><span></span><span></span></div>
+                            <div class="mockup-content">
+                                <div class="mockup-bar"></div>
+                                <div class="mockup-blocks">
+                                    <div class="mockup-block"></div>
+                                    <div class="mockup-block"></div>
+                                </div>
+                                <div class="mockup-bar short"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>TechVault</h3>
+                        <p>
+                            <span class="lang-es">Plataforma E-commerce</span>
+                            <span class="lang-en">E-commerce Platform</span>
+                        </p>
+                        <div class="portfolio-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Stripe</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-animate>
+                    <div class="portfolio-image gradient-2">
+                        <div class="portfolio-mockup">
+                            <div class="mockup-dots"><span></span><span></span><span></span></div>
+                            <div class="mockup-content">
+                                <div class="mockup-bar"></div>
+                                <div class="mockup-grid-3">
+                                    <div class="mockup-block"></div>
+                                    <div class="mockup-block"></div>
+                                    <div class="mockup-block"></div>
+                                </div>
+                                <div class="mockup-bar short"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>FitLife Pro</h3>
+                        <p>
+                            <span class="lang-es">Aplicación Web Fitness</span>
+                            <span class="lang-en">Fitness Web App</span>
+                        </p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">PWA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-animate>
+                    <div class="portfolio-image gradient-3">
+                        <div class="portfolio-mockup">
+                            <div class="mockup-dots"><span></span><span></span><span></span></div>
+                            <div class="mockup-content">
+                                <div class="mockup-bar wide"></div>
+                                <div class="mockup-block tall"></div>
+                                <div class="mockup-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>Artisan Coffee</h3>
+                        <p>Landing Page</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-animate>
+                    <div class="portfolio-image gradient-4">
+                        <div class="portfolio-mockup">
+                            <div class="mockup-dots"><span></span><span></span><span></span></div>
+                            <div class="mockup-content">
+                                <div class="mockup-sidebar"></div>
+                                <div class="mockup-main">
+                                    <div class="mockup-bar"></div>
+                                    <div class="mockup-block"></div>
+                                    <div class="mockup-bar short"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>NexGen Corp</h3>
+                        <p>
+                            <span class="lang-es">Sitio Corporativo</span>
+                            <span class="lang-en">Corporate Website</span>
+                        </p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Next.js</span>
+                            <span class="tag">Tailwind</span>
+                            <span class="tag">CMS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TESTIMONIALS ==================== -->
+    <section id="testimonials" class="section">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="section-tag">
+                    <span class="lang-es">Opiniones</span>
+                    <span class="lang-en">Reviews</span>
+                </span>
+                <h2 class="section-title">
+                    <span class="lang-es">Lo Que Dicen Nuestros <span class="gradient-text">Clientes</span></span>
+                    <span class="lang-en">What Our <span class="gradient-text">Clients</span> Say</span>
+                </h2>
+                <p class="section-description">
+                    <span class="lang-es">La satisfacción de nuestros clientes es nuestra mejor carta de presentación.</span>
+                    <span class="lang-en">Our clients' satisfaction is our best calling card.</span>
+                </p>
+            </div>
+
+            <div class="testimonials-slider" data-animate>
+                <div class="testimonial-track" id="testimonialTrack">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            <span class="lang-es">"DS Web Solution transformó completamente nuestra presencia digital. El resultado superó todas nuestras expectativas. Profesionalismo de primer nivel."</span>
+                            <span class="lang-en">"DS Web Solution completely transformed our digital presence. The result exceeded all our expectations. First-class professionalism."</span>
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">MG</div>
+                            <div class="author-info">
+                                <h4>María García</h4>
+                                <span>CEO, TechVault</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            <span class="lang-es">"Profesionales, creativos y comprometidos. Entregaron nuestro proyecto a tiempo y con una calidad impresionante. Sin duda volveré a trabajar con ellos."</span>
+                            <span class="lang-en">"Professional, creative, and committed. They delivered our project on time with impressive quality. I will definitely work with them again."</span>
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">CR</div>
+                            <div class="author-info">
+                                <h4>Carlos Rodríguez</h4>
+                                <span>
+                                    <span class="lang-es">Fundador, FitLife Pro</span>
+                                    <span class="lang-en">Founder, FitLife Pro</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            <span class="lang-es">"El equipo de DS Web Solution entiende las necesidades del cliente como nadie. Comunicación excelente y resultados impecables. Recomendados al 100%."</span>
+                            <span class="lang-en">"The DS Web Solution team understands client needs like no one else. Excellent communication and impeccable results. 100% recommended."</span>
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">AM</div>
+                            <div class="author-info">
+                                <h4>Ana Martínez</h4>
+                                <span>
+                                    <span class="lang-es">Directora de Marketing, NexGen</span>
+                                    <span class="lang-en">Marketing Director, NexGen</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider-controls">
+                    <button class="slider-btn prev" id="sliderPrev" aria-label="Previous testimonial">
+                        <i class="ri-arrow-left-s-line"></i>
+                    </button>
+                    <div class="slider-dots" id="sliderDots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button class="slider-btn next" id="sliderNext" aria-label="Next testimonial">
+                        <i class="ri-arrow-right-s-line"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CTA ==================== -->
+    <section id="cta" class="section">
+        <div class="cta-bg">
+            <div class="cta-glow"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content" data-animate>
+                <h2>
+                    <span class="lang-es">¿Listo para Transformar tu<br><span class="gradient-text">Presencia Digital</span>?</span>
+                    <span class="lang-en">Ready to Transform Your<br><span class="gradient-text">Digital Presence</span>?</span>
+                </h2>
+                <p>
+                    <span class="lang-es">Convierte tu visión en realidad con un sitio web que impacte, convierta y haga crecer tu negocio.</span>
+                    <span class="lang-en">Turn your vision into reality with a website that impacts, converts, and grows your business.</span>
+                </p>
+                <div class="cta-buttons">
+                    <a href="mailto:contacto@dswebsolution.com" class="btn btn-primary btn-lg">
+                        <i class="ri-mail-send-line"></i>
+                        <span class="lang-es">Solicitar Cotización</span>
+                        <span class="lang-en">Request a Quote</span>
+                    </a>
+                    <a href="https://wa.me/0000000000" class="btn btn-whatsapp btn-lg" target="_blank">
+                        <i class="ri-whatsapp-line"></i>
+                        WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-brand">
+                    <a href="#hero" class="nav-logo">
+                        <img src="assets/images/ds-logo.png" alt="DS Web Solution" class="nav-logo-img">
+                        <span class="nav-logo-text">DS <span class="accent">Web Solution</span></span>
+                    </a>
+                    <p>
+                        <span class="lang-es">Transformamos ideas en experiencias digitales excepcionales. Tu éxito es nuestro compromiso.</span>
+                        <span class="lang-en">We transform ideas into exceptional digital experiences. Your success is our commitment.</span>
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>
+                        <span class="lang-es">Navegación</span>
+                        <span class="lang-en">Navigation</span>
+                    </h4>
+                    <ul>
+                        <li><a href="#hero">
+                            <span class="lang-es">Inicio</span>
+                            <span class="lang-en">Home</span>
+                        </a></li>
+                        <li><a href="#services">
+                            <span class="lang-es">Servicios</span>
+                            <span class="lang-en">Services</span>
+                        </a></li>
+                        <li><a href="#portfolio">
+                            <span class="lang-es">Portafolio</span>
+                            <span class="lang-en">Portfolio</span>
+                        </a></li>
+                        <li><a href="#testimonials">
+                            <span class="lang-es">Testimonios</span>
+                            <span class="lang-en">Testimonials</span>
+                        </a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>
+                        <span class="lang-es">Servicios</span>
+                        <span class="lang-en">Services</span>
+                    </h4>
+                    <ul>
+                        <li><a href="#services">Landing Pages</a></li>
+                        <li><a href="#services">E-commerce</a></li>
+                        <li><a href="#services">
+                            <span class="lang-es">Aplicaciones Web</span>
+                            <span class="lang-en">Web Apps</span>
+                        </a></li>
+                        <li><a href="#services">WordPress</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>
+                        <span class="lang-es">Contacto</span>
+                        <span class="lang-en">Contact</span>
+                    </h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="ri-mail-line"></i>
+                            <a href="mailto:contacto@dswebsolution.com">contacto@dswebsolution.com</a>
+                        </li>
+                        <li>
+                            <i class="ri-phone-line"></i>
+                            <a href="tel:+0000000000">+00 000 000 0000</a>
+                        </li>
+                        <li>
+                            <i class="ri-map-pin-line"></i>
+                            <span>
+                                <span class="lang-es">Tu Ciudad, País</span>
+                                <span class="lang-en">Your City, Country</span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>
+                    <span class="lang-es">© 2026 DS Web Solution. Todos los derechos reservados.</span>
+                    <span class="lang-en">© 2026 DS Web Solution. All rights reserved.</span>
+                </p>
+                <div class="footer-social">
+                    <a href="#" class="social-link" aria-label="Instagram" target="_blank"><i class="ri-instagram-line"></i></a>
+                    <a href="#" class="social-link" aria-label="Facebook" target="_blank"><i class="ri-facebook-circle-line"></i></a>
+                    <a href="#" class="social-link" aria-label="LinkedIn" target="_blank"><i class="ri-linkedin-box-line"></i></a>
+                    <a href="https://github.com/davidsangarita-hash" class="social-link" aria-label="GitHub" target="_blank"><i class="ri-github-line"></i></a>
+                    <a href="https://wa.me/0000000000" class="social-link" aria-label="WhatsApp" target="_blank"><i class="ri-whatsapp-line"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
