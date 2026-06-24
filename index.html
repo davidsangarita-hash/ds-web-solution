@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DS Web Solution — Desarrollo Web Profesional</title>
   <meta name="description" content="DS Web Solution: Diseñamos y desarrollamos sitios web profesionales. Landing pages, e-commerce, aplicaciones web y más.">
-  <meta name="keywords" content="desarrollo web, landing pages, e-commerce, diseño web, PWA, WordPress">
   <meta name="author" content="DS Web Solution">
   <meta property="og:title" content="DS Web Solution — Desarrollo Web a Tu Medida">
   <meta property="og:description" content="Tu negocio merece un sitio web que funcione de verdad.">
@@ -19,7 +18,7 @@
 </head>
 <body>
 
-<!-- ==================== NAVBAR ==================== -->
+<!-- ========== NAVBAR ========== -->
 <nav id="navbar">
   <div class="nav-wrap">
     <a href="#hero" class="nav-logo">
@@ -63,117 +62,114 @@
   </div>
 </nav>
 
-<!-- ==================== HERO ==================== -->
+<!-- ========== HERO ========== -->
 <section id="hero">
   <div class="hero-photo"></div>
   <div class="hero-overlay"></div>
 
   <div class="hero-inner wrap">
 
-    <!-- Left: text -->
+    <!-- Text column -->
     <div class="hero-left">
-      <div class="hero-eyebrow" data-anim>
+
+      <div class="hero-eyebrow">
         <i class="ri-code-s-slash-line"></i>
         <span class="lang-es">Desarrollo Web a Tu Medida</span>
         <span class="lang-en">Web Development Tailored for You</span>
       </div>
 
-      <h1 class="hero-h1" data-anim>
+      <h1 class="hero-h1">
         <span class="lang-es">Tu negocio merece<br>un sitio que <em>realmente funcione</em></span>
         <span class="lang-en">Your business deserves<br>a site that <em>actually works</em></span>
       </h1>
 
-      <p class="hero-sub" data-anim>
+      <p class="hero-sub">
         <span class="lang-es">Diseñamos y construimos sitios web pensados en lo que tu negocio necesita: atraer clientes, mostrar tu trabajo y crecer.</span>
         <span class="lang-en">We design and build websites focused on what your business actually needs: attract clients, showcase your work, and grow.</span>
       </p>
 
-      <div class="hero-btns" data-anim>
+      <div class="hero-btns">
         <a href="#services" class="btn btn-primary">
           <span class="lang-es">Ver Servicios</span>
           <span class="lang-en">View Services</span>
           <i class="ri-arrow-right-line"></i>
         </a>
-        <a href="#cta" class="btn btn-secondary">
+        <a href="#cta" class="btn btn-outline">
           <span class="lang-es">Solicitar Cotización</span>
           <span class="lang-en">Request a Quote</span>
         </a>
       </div>
 
-      <div class="hero-trust" data-anim>
+      <div class="hero-trust">
         <div class="trust-row">
           <i class="ri-shield-check-line"></i>
-          <span>
-            <span class="lang-es">Código limpio y entregado a tiempo</span>
-            <span class="lang-en">Clean code, delivered on time</span>
-          </span>
+          <span class="lang-es">Código limpio y entregado a tiempo</span>
+          <span class="lang-en">Clean code, delivered on time</span>
         </div>
         <div class="trust-row">
           <i class="ri-heart-line"></i>
-          <span>
-            <span class="lang-es">Comprometidos con cada proyecto</span>
-            <span class="lang-en">Committed to every project</span>
-          </span>
+          <span class="lang-es">Comprometidos con cada proyecto</span>
+          <span class="lang-en">Committed to every project</span>
         </div>
         <div class="trust-row">
           <i class="ri-chat-3-line"></i>
-          <span>
-            <span class="lang-es">Comunicación directa durante todo el proceso</span>
-            <span class="lang-en">Direct communication throughout the process</span>
-          </span>
+          <span class="lang-es">Comunicación directa durante todo el proceso</span>
+          <span class="lang-en">Direct communication throughout</span>
         </div>
       </div>
-    </div>
 
-    <!-- Right: code window -->
-    <div class="hero-right" data-anim>
+    </div><!-- /hero-left -->
+
+    <!-- Code window column -->
+    <div class="hero-right">
       <div class="code-window">
         <div class="code-titlebar">
-          <span class="win-dot r"></span>
-          <span class="win-dot y"></span>
-          <span class="win-dot g"></span>
+          <span class="wd r"></span>
+          <span class="wd y"></span>
+          <span class="wd g"></span>
           <span class="code-fname">index.html — DS Web Solution</span>
         </div>
         <div class="code-body">
-<pre><span class="syn-cm">&lt;!-- Hero Section --&gt;</span>
-<span class="syn-tag">&lt;section</span> <span class="syn-atr">id</span><span class="syn-pun">=</span><span class="syn-val">"hero"</span><span class="syn-tag">&gt;</span>
+<pre><span class="c-cm">&lt;!-- Hero Section --&gt;</span>
+<span class="c-tag">&lt;section</span> <span class="c-atr">id</span><span class="c-pun">=</span><span class="c-val">"hero"</span><span class="c-tag">&gt;</span>
 
-  <span class="syn-tag">&lt;h1</span> <span class="syn-atr">class</span><span class="syn-pun">=</span><span class="syn-val">"hero-title"</span><span class="syn-tag">&gt;</span>
+  <span class="c-tag">&lt;h1</span> <span class="c-atr">class</span><span class="c-pun">=</span><span class="c-val">"hero-title"</span><span class="c-tag">&gt;</span>
     Tu negocio merece
-    <span class="syn-tag">&lt;em&gt;</span>un sitio que funcione<span class="syn-tag">&lt;/em&gt;</span>
-  <span class="syn-tag">&lt;/h1&gt;</span>
+    <span class="c-tag">&lt;em&gt;</span>un sitio que funcione<span class="c-tag">&lt;/em&gt;</span>
+  <span class="c-tag">&lt;/h1&gt;</span>
 
-  <span class="syn-tag">&lt;a</span> <span class="syn-atr">href</span><span class="syn-pun">=</span><span class="syn-val">"#cta"</span>
-     <span class="syn-atr">class</span><span class="syn-pun">=</span><span class="syn-val">"btn btn-primary"</span><span class="syn-tag">&gt;</span>
+  <span class="c-tag">&lt;a</span> <span class="c-atr">href</span><span class="c-pun">=</span><span class="c-val">"#cta"</span>
+     <span class="c-atr">class</span><span class="c-pun">=</span><span class="c-val">"btn btn-primary"</span><span class="c-tag">&gt;</span>
     Cotizar proyecto
-  <span class="syn-tag">&lt;/a&gt;</span>
+  <span class="c-tag">&lt;/a&gt;</span>
 
-<span class="syn-tag">&lt;/section&gt;</span>
+<span class="c-tag">&lt;/section&gt;</span>
 
-<span class="syn-cm">/* styles.css */</span>
-<span class="syn-fn">.hero-title</span> <span class="syn-pun">{</span>
-  <span class="syn-kw">font-size</span><span class="syn-pun">:</span> <span class="syn-num">3.2rem</span><span class="syn-pun">;</span>
-  <span class="syn-kw">font-weight</span><span class="syn-pun">:</span> <span class="syn-num">700</span><span class="syn-pun">;</span>
-  <span class="syn-kw">color</span><span class="syn-pun">:</span> <span class="syn-str">#dde3ee</span><span class="syn-pun">;</span>
-<span class="syn-pun">}</span></pre>
+<span class="c-cm">/* styles.css */</span>
+<span class="c-fn">.hero-title</span> <span class="c-pun">{</span>
+  <span class="c-kw">font-size</span><span class="c-pun">:</span> <span class="c-num">3.2rem</span><span class="c-pun">;</span>
+  <span class="c-kw">font-weight</span><span class="c-pun">:</span> <span class="c-num">700</span><span class="c-pun">;</span>
+  <span class="c-kw">color</span><span class="c-pun">:</span> <span class="c-str">#dde3ee</span><span class="c-pun">;</span>
+<span class="c-pun">}</span></pre>
         </div>
       </div>
-    </div>
+    </div><!-- /hero-right -->
 
   </div><!-- /hero-inner -->
 </section>
 
-<!-- ==================== SERVICES ==================== -->
+<!-- ========== SERVICES ========== -->
 <section id="services" class="section">
   <div class="wrap">
-    <div class="s-head" data-anim>
-      <span class="s-tag">
+
+    <div class="s-head">
+      <span class="s-label">
         <span class="lang-es">Lo que hacemos</span>
         <span class="lang-en">What we do</span>
       </span>
       <h2 class="s-title">
-        <span class="lang-es">Nuestros <span class="gradient-text">Servicios</span></span>
-        <span class="lang-en">Our <span class="gradient-text">Services</span></span>
+        <span class="lang-es">Nuestros <span class="hl">Servicios</span></span>
+        <span class="lang-en">Our <span class="hl">Services</span></span>
       </h2>
       <p class="s-desc">
         <span class="lang-es">Soluciones digitales construidas para que tu negocio crezca.</span>
@@ -183,12 +179,12 @@
 
     <div class="services-grid">
 
-      <div class="svc-card" data-anim>
+      <div class="svc-card">
         <div class="svc-icon"><i class="ri-layout-masonry-line"></i></div>
         <h3 class="svc-title">Landing Pages</h3>
         <p class="svc-desc">
-          <span class="lang-es">Páginas de aterrizaje optimizadas para convertir visitantes en clientes desde el primer segundo.</span>
-          <span class="lang-en">Landing pages optimized to convert visitors into clients from the very first second.</span>
+          <span class="lang-es">Páginas optimizadas para convertir visitantes en clientes desde el primer segundo.</span>
+          <span class="lang-en">Pages optimized to convert visitors into clients from the very first second.</span>
         </p>
         <a href="#cta" class="svc-link">
           <span class="lang-es">Cotizar</span>
@@ -197,15 +193,15 @@
         </a>
       </div>
 
-      <div class="svc-card" data-anim>
+      <div class="svc-card">
         <div class="svc-icon"><i class="ri-shopping-cart-2-line"></i></div>
         <h3 class="svc-title">
           <span class="lang-es">Tiendas Online</span>
           <span class="lang-en">Online Stores</span>
         </h3>
         <p class="svc-desc">
-          <span class="lang-es">Tiendas digitales completas con carrito de compras, pasarelas de pago y gestión de productos.</span>
-          <span class="lang-en">Complete online stores with shopping cart, payment gateways, and product management.</span>
+          <span class="lang-es">Tiendas digitales con carrito, pagos y gestión de productos.</span>
+          <span class="lang-en">Digital stores with cart, payments, and product management.</span>
         </p>
         <a href="#cta" class="svc-link">
           <span class="lang-es">Cotizar</span>
@@ -214,15 +210,15 @@
         </a>
       </div>
 
-      <div class="svc-card" data-anim>
+      <div class="svc-card">
         <div class="svc-icon"><i class="ri-global-line"></i></div>
         <h3 class="svc-title">
           <span class="lang-es">Sitios Corporativos</span>
           <span class="lang-en">Corporate Websites</span>
         </h3>
         <p class="svc-desc">
-          <span class="lang-es">Presencia digital profesional que refleja la identidad de tu empresa y genera confianza.</span>
-          <span class="lang-en">Professional digital presence that reflects your company identity and builds trust.</span>
+          <span class="lang-es">Presencia digital profesional que refleja la identidad de tu empresa.</span>
+          <span class="lang-en">Professional digital presence that reflects your company identity.</span>
         </p>
         <a href="#cta" class="svc-link">
           <span class="lang-es">Cotizar</span>
@@ -231,15 +227,15 @@
         </a>
       </div>
 
-      <div class="svc-card" data-anim>
+      <div class="svc-card">
         <div class="svc-icon"><i class="ri-smartphone-line"></i></div>
         <h3 class="svc-title">
           <span class="lang-es">Aplicaciones Web</span>
           <span class="lang-en">Web Applications</span>
         </h3>
         <p class="svc-desc">
-          <span class="lang-es">Aplicaciones web progresivas (PWA) rápidas y responsivas que funcionan en cualquier dispositivo.</span>
-          <span class="lang-en">Fast and responsive progressive web apps (PWA) that work on any device.</span>
+          <span class="lang-es">PWA rápidas y responsivas que funcionan en cualquier dispositivo.</span>
+          <span class="lang-en">Fast and responsive PWAs that work on any device.</span>
         </p>
         <a href="#cta" class="svc-link">
           <span class="lang-es">Cotizar</span>
@@ -248,15 +244,15 @@
         </a>
       </div>
 
-      <div class="svc-card" data-anim>
+      <div class="svc-card">
         <div class="svc-icon"><i class="ri-palette-line"></i></div>
         <h3 class="svc-title">
           <span class="lang-es">Diseño UI/UX</span>
           <span class="lang-en">UI/UX Design</span>
         </h3>
         <p class="svc-desc">
-          <span class="lang-es">Interfaces que se ven bien y son fáciles de usar. Diseño centrado en la experiencia del usuario.</span>
-          <span class="lang-en">Interfaces that look great and are easy to use. User experience-centered design.</span>
+          <span class="lang-es">Interfaces que se ven bien y son fáciles de usar. Diseño centrado en el usuario.</span>
+          <span class="lang-en">Interfaces that look great and are easy to use. User-centered design.</span>
         </p>
         <a href="#cta" class="svc-link">
           <span class="lang-es">Cotizar</span>
@@ -265,29 +261,29 @@
         </a>
       </div>
 
-      <div class="svc-card" data-anim>
-        <div class="svc-icon"><i class="ri-tools-line"></i></div>
-        <h3 class="svc-title">
-          <span class="lang-es">Mantenimiento Web</span>
-          <span class="lang-en">Web Maintenance</span>
-        </h3>
-        <p class="svc-desc">
-          <span class="lang-es">Actualizaciones, correcciones y soporte continuo para que tu sitio esté siempre funcionando.</span>
-          <span class="lang-en">Updates, fixes, and ongoing support to keep your site always running.</span>
-        </p>
-        <a href="#cta" class="svc-link">
-          <span class="lang-es">Cotizar</span>
-          <span class="lang-en">Get Quote</span>
-          <i class="ri-arrow-right-line"></i>
-        </a>
-      </div>
-
-      <div class="svc-card" data-anim>
+      <div class="svc-card">
         <div class="svc-icon"><i class="ri-wordpress-line"></i></div>
         <h3 class="svc-title">WordPress</h3>
         <p class="svc-desc">
-          <span class="lang-es">Sitios personalizados con WordPress: temas a medida, plugins y capacitación para que lo manejes tú.</span>
-          <span class="lang-en">Custom WordPress sites: tailored themes, plugins, and training so you can manage it yourself.</span>
+          <span class="lang-es">Sitios personalizados en WordPress con temas a medida y capacitación.</span>
+          <span class="lang-en">Custom WordPress sites with tailored themes and training.</span>
+        </p>
+        <a href="#cta" class="svc-link">
+          <span class="lang-es">Cotizar</span>
+          <span class="lang-en">Get Quote</span>
+          <i class="ri-arrow-right-line"></i>
+        </a>
+      </div>
+
+      <div class="svc-card">
+        <div class="svc-icon"><i class="ri-tools-line"></i></div>
+        <h3 class="svc-title">
+          <span class="lang-es">Mantenimiento</span>
+          <span class="lang-en">Maintenance</span>
+        </h3>
+        <p class="svc-desc">
+          <span class="lang-es">Actualizaciones y soporte continuo para que tu sitio siempre funcione.</span>
+          <span class="lang-en">Updates and ongoing support to keep your site always running.</span>
         </p>
         <a href="#cta" class="svc-link">
           <span class="lang-es">Cotizar</span>
@@ -300,26 +296,27 @@
   </div>
 </section>
 
-<!-- ==================== WHY US ==================== -->
+<!-- ========== WHY US ========== -->
 <section id="why-us" class="section">
   <div class="wrap">
-    <div class="s-head" data-anim>
-      <span class="s-tag">
+
+    <div class="s-head">
+      <span class="s-label">
         <span class="lang-es">Nuestra diferencia</span>
         <span class="lang-en">Our difference</span>
       </span>
       <h2 class="s-title">
-        <span class="lang-es">¿Por qué <span class="gradient-text">elegirnos</span>?</span>
-        <span class="lang-en">Why <span class="gradient-text">choose us</span>?</span>
+        <span class="lang-es">¿Por qué <span class="hl">elegirnos</span>?</span>
+        <span class="lang-en">Why <span class="hl">choose us</span>?</span>
       </h2>
       <p class="s-desc">
-        <span class="lang-es">Somos directos, trabajamos con compromiso y no prometemos lo que no podemos cumplir.</span>
-        <span class="lang-en">We're straightforward, work with commitment, and don't promise what we can't deliver.</span>
+        <span class="lang-es">Directos, comprometidos y sin promesas vacías.</span>
+        <span class="lang-en">Straightforward, committed, and no empty promises.</span>
       </p>
     </div>
 
     <div class="why-grid">
-      <div class="why-card" data-anim>
+      <div class="why-card">
         <div class="why-ico"><i class="ri-speed-line"></i></div>
         <div>
           <h3>
@@ -327,27 +324,27 @@
             <span class="lang-en">On-time delivery</span>
           </h3>
           <p>
-            <span class="lang-es">Cumplimos los plazos acordados. Si algo cambia, te avisamos antes, no después.</span>
-            <span class="lang-en">We meet agreed deadlines. If something changes, we tell you before, not after.</span>
+            <span class="lang-es">Cumplimos los plazos. Si algo cambia, te avisamos antes, no después.</span>
+            <span class="lang-en">We meet deadlines. If something changes, we tell you before, not after.</span>
           </p>
         </div>
       </div>
 
-      <div class="why-card" data-anim>
+      <div class="why-card">
         <div class="why-ico"><i class="ri-code-s-slash-line"></i></div>
         <div>
           <h3>
-            <span class="lang-es">Código propio y mantenible</span>
-            <span class="lang-en">Custom, maintainable code</span>
+            <span class="lang-es">Código propio</span>
+            <span class="lang-en">Custom code</span>
           </h3>
           <p>
-            <span class="lang-es">No usamos plantillas de terceros que luego son difíciles de editar. Todo construido desde cero.</span>
-            <span class="lang-en">We don't use third-party templates that are hard to edit later. Everything built from scratch.</span>
+            <span class="lang-es">Sin plantillas genéricas. Todo construido desde cero y fácil de mantener.</span>
+            <span class="lang-en">No generic templates. Everything built from scratch and easy to maintain.</span>
           </p>
         </div>
       </div>
 
-      <div class="why-card" data-anim>
+      <div class="why-card">
         <div class="why-ico"><i class="ri-chat-3-line"></i></div>
         <div>
           <h3>
@@ -355,13 +352,13 @@
             <span class="lang-en">Direct communication</span>
           </h3>
           <p>
-            <span class="lang-es">Hablas con quien hace el trabajo, no con un intermediario. Sin mensajes automatizados.</span>
-            <span class="lang-en">You talk to whoever does the work, not an intermediary. No automated messages.</span>
+            <span class="lang-es">Hablas con quien hace el trabajo, no con un intermediario.</span>
+            <span class="lang-en">You talk to the person doing the work, not a middleman.</span>
           </p>
         </div>
       </div>
 
-      <div class="why-card" data-anim>
+      <div class="why-card">
         <div class="why-ico"><i class="ri-smartphone-line"></i></div>
         <div>
           <h3>
@@ -369,35 +366,37 @@
             <span class="lang-en">Actually responsive</span>
           </h3>
           <p>
-            <span class="lang-es">Todos nuestros sitios funcionan en móvil, tablet y computador. No como adorno, sino bien.</span>
-            <span class="lang-en">All our sites work on mobile, tablet, and desktop. Not as a checkbox, but actually well.</span>
+            <span class="lang-es">Todos nuestros sitios funcionan bien en móvil, tablet y computador.</span>
+            <span class="lang-en">All our sites work well on mobile, tablet, and desktop.</span>
           </p>
         </div>
       </div>
     </div>
+
   </div>
 </section>
 
-<!-- ==================== PROCESS ==================== -->
+<!-- ========== PROCESS ========== -->
 <section id="process" class="section">
   <div class="wrap">
-    <div class="s-head" data-anim>
-      <span class="s-tag">
+
+    <div class="s-head">
+      <span class="s-label">
         <span class="lang-es">Cómo trabajamos</span>
         <span class="lang-en">How we work</span>
       </span>
       <h2 class="s-title">
-        <span class="lang-es">Nuestro <span class="gradient-text">proceso</span></span>
-        <span class="lang-en">Our <span class="gradient-text">process</span></span>
+        <span class="lang-es">Nuestro <span class="hl">proceso</span></span>
+        <span class="lang-en">Our <span class="hl">process</span></span>
       </h2>
       <p class="s-desc">
-        <span class="lang-es">Claro, sin sorpresas, de principio a fin.</span>
-        <span class="lang-en">Clear, no surprises, from start to finish.</span>
+        <span class="lang-es">Claro y sin sorpresas, de principio a fin.</span>
+        <span class="lang-en">Clear and no surprises, from start to finish.</span>
       </p>
     </div>
 
     <div class="process-grid">
-      <div class="step" data-anim>
+      <div class="step">
         <div class="step-num">01</div>
         <div class="step-ico"><i class="ri-chat-3-line"></i></div>
         <h3>
@@ -405,12 +404,12 @@
           <span class="lang-en">Consultation</span>
         </h3>
         <p>
-          <span class="lang-es">Hablamos sobre tu proyecto, tus objetivos y lo que necesitas realmente.</span>
-          <span class="lang-en">We talk about your project, your goals, and what you actually need.</span>
+          <span class="lang-es">Hablamos de tu proyecto, objetivos y lo que necesitas realmente.</span>
+          <span class="lang-en">We talk about your project, goals, and what you actually need.</span>
         </p>
       </div>
 
-      <div class="step" data-anim>
+      <div class="step">
         <div class="step-num">02</div>
         <div class="step-ico"><i class="ri-pencil-ruler-2-line"></i></div>
         <h3>
@@ -418,12 +417,12 @@
           <span class="lang-en">Proposal</span>
         </h3>
         <p>
-          <span class="lang-es">Te enviamos una propuesta con alcance, tiempos y costos. Sin letras pequeñas.</span>
-          <span class="lang-en">We send a proposal with scope, timelines, and costs. No fine print.</span>
+          <span class="lang-es">Te enviamos alcance, tiempos y costos. Sin letras pequeñas.</span>
+          <span class="lang-en">We send scope, timelines, and costs. No fine print.</span>
         </p>
       </div>
 
-      <div class="step" data-anim>
+      <div class="step">
         <div class="step-num">03</div>
         <div class="step-ico"><i class="ri-code-s-slash-line"></i></div>
         <h3>
@@ -431,12 +430,12 @@
           <span class="lang-en">Development</span>
         </h3>
         <p>
-          <span class="lang-es">Construimos tu sitio con revisiones en el camino para que quede justo como lo pensaste.</span>
-          <span class="lang-en">We build your site with check-ins along the way so it turns out just as you envisioned.</span>
+          <span class="lang-es">Construimos tu sitio con revisiones en el camino.</span>
+          <span class="lang-en">We build your site with check-ins along the way.</span>
         </p>
       </div>
 
-      <div class="step" data-anim>
+      <div class="step">
         <div class="step-num">04</div>
         <div class="step-ico"><i class="ri-rocket-2-line"></i></div>
         <h3>
@@ -444,25 +443,27 @@
           <span class="lang-en">Delivery</span>
         </h3>
         <p>
-          <span class="lang-es">Publicamos tu sitio y te dejamos todo listo. Soporte post-entrega incluido.</span>
-          <span class="lang-en">We publish your site and leave everything ready. Post-delivery support included.</span>
+          <span class="lang-es">Publicamos tu sitio. Soporte post-entrega incluido.</span>
+          <span class="lang-en">We publish your site. Post-delivery support included.</span>
         </p>
       </div>
     </div>
+
   </div>
 </section>
 
-<!-- ==================== PORTFOLIO (COMING SOON) ==================== -->
+<!-- ========== PORTFOLIO ========== -->
 <section id="portfolio" class="section">
   <div class="wrap">
-    <div class="s-head" data-anim>
-      <span class="s-tag">
+
+    <div class="s-head">
+      <span class="s-label">
         <span class="lang-es">Nuestro trabajo</span>
         <span class="lang-en">Our work</span>
       </span>
       <h2 class="s-title">
-        <span class="lang-es">Proyectos <span class="gradient-text">en camino</span></span>
-        <span class="lang-en">Projects <span class="gradient-text">on the way</span></span>
+        <span class="lang-es">Proyectos <span class="hl">en camino</span></span>
+        <span class="lang-en">Projects <span class="hl">on the way</span></span>
       </h2>
       <p class="s-desc">
         <span class="lang-es">Estamos construyendo nuestros primeros proyectos. Pronto los verás aquí.</span>
@@ -470,7 +471,7 @@
       </p>
     </div>
 
-    <div class="coming-wrap" data-anim>
+    <div class="coming-wrap">
       <div class="coming-card">
         <div class="coming-ico"><i class="ri-code-box-line"></i></div>
         <h3>
@@ -478,7 +479,7 @@
           <span class="lang-en">Coming Soon</span>
         </h3>
         <p>
-          <span class="lang-es">Estamos trabajando en nuestros primeros proyectos reales. ¿Quieres ser uno de los primeros clientes?</span>
+          <span class="lang-es">Estamos trabajando en nuestros primeros proyectos reales. ¿Quieres ser uno de los primeros?</span>
           <span class="lang-en">We're working on our first real projects. Want to be one of our first clients?</span>
         </p>
         <a href="#cta" class="btn btn-primary">
@@ -512,22 +513,23 @@
         </div>
       </div>
     </div>
+
   </div>
 </section>
 
-<!-- ==================== CTA ==================== -->
+<!-- ========== CTA ========== -->
 <section id="cta" class="section">
   <div class="cta-photo"></div>
-  <div class="cta-overlay"></div>
+  <div class="cta-dark"></div>
   <div class="wrap">
-    <div class="cta-inner" data-anim>
+    <div class="cta-inner">
       <h2>
-        <span class="lang-es">¿Listo para tener un sitio web<br>que <em>realmente trabaje</em> por ti?</span>
-        <span class="lang-en">Ready to have a website that<br><em>actually works</em> for you?</span>
+        <span class="lang-es">¿Listo para tener un sitio que<br><em>trabaje por ti</em>?</span>
+        <span class="lang-en">Ready for a website that<br><em>works for you</em>?</span>
       </h2>
       <p>
-        <span class="lang-es">Cuéntanos tu idea. Sin compromiso, sin formularios eternos. Solo una conversación.</span>
-        <span class="lang-en">Tell us your idea. No commitment, no endless forms. Just a conversation.</span>
+        <span class="lang-es">Cuéntanos tu idea. Sin compromiso ni formularios interminables.</span>
+        <span class="lang-en">Tell us your idea. No commitment or endless forms.</span>
       </p>
       <div class="cta-btns">
         <a href="mailto:contacto@dswebsolution.com" class="btn btn-primary btn-lg">
@@ -544,7 +546,7 @@
   </div>
 </section>
 
-<!-- ==================== FOOTER ==================== -->
+<!-- ========== FOOTER ========== -->
 <footer id="footer">
   <div class="wrap">
     <div class="footer-grid">
@@ -566,47 +568,26 @@
           <span class="lang-en">Navigation</span>
         </h4>
         <ul>
-          <li><a href="#hero">
-            <span class="lang-es">Inicio</span>
-            <span class="lang-en">Home</span>
-          </a></li>
-          <li><a href="#services">
-            <span class="lang-es">Servicios</span>
-            <span class="lang-en">Services</span>
-          </a></li>
-          <li><a href="#portfolio">
-            <span class="lang-es">Portafolio</span>
-            <span class="lang-en">Portfolio</span>
-          </a></li>
-          <li><a href="#cta">
-            <span class="lang-es">Contacto</span>
-            <span class="lang-en">Contact</span>
-          </a></li>
+          <li><a href="#hero"><span class="lang-es">Inicio</span><span class="lang-en">Home</span></a></li>
+          <li><a href="#services"><span class="lang-es">Servicios</span><span class="lang-en">Services</span></a></li>
+          <li><a href="#portfolio"><span class="lang-es">Portafolio</span><span class="lang-en">Portfolio</span></a></li>
+          <li><a href="#cta"><span class="lang-es">Contacto</span><span class="lang-en">Contact</span></a></li>
         </ul>
       </div>
 
       <div class="f-col">
-        <h4>
-          <span class="lang-es">Servicios</span>
-          <span class="lang-en">Services</span>
-        </h4>
+        <h4><span class="lang-es">Servicios</span><span class="lang-en">Services</span></h4>
         <ul>
           <li><a href="#services">Landing Pages</a></li>
           <li><a href="#services">E-commerce</a></li>
-          <li><a href="#services">
-            <span class="lang-es">Aplicaciones Web</span>
-            <span class="lang-en">Web Apps</span>
-          </a></li>
+          <li><a href="#services"><span class="lang-es">Aplicaciones Web</span><span class="lang-en">Web Apps</span></a></li>
           <li><a href="#services">WordPress</a></li>
         </ul>
       </div>
 
       <div class="f-col">
-        <h4>
-          <span class="lang-es">Contacto</span>
-          <span class="lang-en">Contact</span>
-        </h4>
-        <ul class="f-contact-list">
+        <h4><span class="lang-es">Contacto</span><span class="lang-en">Contact</span></h4>
+        <ul class="f-contacts">
           <li>
             <i class="ri-mail-line"></i>
             <a href="mailto:contacto@dswebsolution.com">contacto@dswebsolution.com</a>
@@ -617,13 +598,11 @@
           </li>
           <li>
             <i class="ri-map-pin-line"></i>
-            <span>
-              <span class="lang-es">Tu Ciudad, País</span>
-              <span class="lang-en">Your City, Country</span>
-            </span>
+            <span><span class="lang-es">Tu Ciudad, País</span><span class="lang-en">Your City, Country</span></span>
           </li>
         </ul>
       </div>
+
     </div>
 
     <div class="f-bottom">
