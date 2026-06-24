@@ -1,5 +1,5 @@
-/* =====================================================
-   DS Web Solution — Styles v5 (CLEAN & GUARANTEED)
+﻿/* =====================================================
+   DS Web Solution â€” Styles v5 (CLEAN & GUARANTEED)
    Content is ALWAYS visible. Hero uses pure CSS animations.
    Zero dependency on JS for showing/hiding anything.
    ===================================================== */
@@ -78,7 +78,7 @@ html.en .lang-es { display:none; }
 .hl { color: var(--amber); }
 
 /* ==================== PURE CSS ANIMATIONS ==================== */
-/* These run automatically — zero JS dependency */
+/* These run automatically â€” zero JS dependency */
 
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(22px); }
@@ -103,7 +103,7 @@ html.en .lang-es { display:none; }
 .hero-trust   { animation: fadeUp .6s ease .65s both; }
 .hero-right   { animation: fadeUp .8s ease .3s both; }
 
-/* JS-enhanced scroll animations (optional — content already visible if JS fails) */
+/* JS-enhanced scroll animations (optional â€” content already visible if JS fails) */
 html.js [data-scroll] {
   opacity: 0;
   transform: translateY(18px);
@@ -589,216 +589,350 @@ html.js [data-scroll].visible {
 .soc:hover { color:var(--text) !important; border-color:var(--border-h); background:var(--bg-raised); }
 
 /* ============================================================
-   RESPONSIVE — Mobile First
+   RESPONSIVE â€” Mobile First
    Breakpoints: 1280 | 1024 | 768 | 480 | 360
    ============================================================ */
 
-/* ---------- Tablet landscape (≤1280px) ---------- */
+/* ---------- Tablet landscape (â‰¤1280px) ---------- */
 @media (max-width:1280px) {
   :root { --wrap: 960px; }
 }
 
-/* ---------- Tablet portrait (≤1024px) ---------- */
+/* ---------- Tablet portrait (â‰¤1024px) ---------- */
 @media (max-width:1024px) {
   :root {
     --section-py: 80px;
     --px: 28px;
   }
 
-  /* Hero: single column, centered */
   .hero-inner {
     grid-template-columns: 1fr;
-    gap: 40px;
     text-align: center;
   }
   .hero-right { display:none; }
-  .hero-sub {
-    max-width: 560px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .hero-btns {
-    justify-content: center;
-  }
-  .hero-trust {
-    align-items: center;
-  }
-  /* Hero overlay: uniform dark on tablet since text is centered */
-  .hero-overlay {
-    background: rgba(8,12,20,.88);
-  }
+  .hero-sub   { max-width:560px; margin-left:auto; margin-right:auto; }
+  .hero-btns  { justify-content:center; }
+  .hero-trust { align-items:center; }
+  .hero-overlay { background: rgba(8,12,20,.88); }
 
-  /* Grids */
   .process-grid { grid-template-columns: repeat(2,1fr); }
   .why-grid     { grid-template-columns: repeat(2,1fr); }
-
-  /* Footer: 2 columns */
-  .footer-grid { grid-template-columns: repeat(2,1fr); gap:32px; }
+  .footer-grid  { grid-template-columns: repeat(2,1fr); gap:32px; }
 }
 
-/* ---------- Mobile (≤768px) ---------- */
+/* ============================================================
+   MOBILE (â‰¤768px)
+   Full redesign for portrait phone screens
+   ============================================================ */
 @media (max-width:768px) {
   :root {
-    --section-py: 64px;
-    --px: 20px;
+    --section-py: 60px;
+    --px: 18px;
   }
 
-  /* --- Navbar --- */
-  /* Hide desktop links and right controls */
+  /* ---- Navbar ---- */
+  #navbar { padding: 14px 0; }
+
   .nav-links {
-    /* Fullscreen slide-in from right */
     position: fixed;
-    top: 0; right: -100%;
+    top: 0; left: 0;
     width: 100%; height: 100%;
-    background: rgba(8,12,20,.98);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    background: #080c14;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 4px;
-    transition: right .3s ease;
+    gap: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .25s ease;
     z-index: 998;
   }
-  .nav-links.open { right: 0; }
-
-  /* Bigger tap targets in mobile menu */
+  .nav-links.open {
+    opacity: 1;
+    pointer-events: all;
+  }
   .nav-links a {
-    font-size: 1.15rem;
-    font-weight: 600;
-    padding: 14px 40px;
-    color: var(--text-2) !important;
+    display: block;
     width: 100%;
     text-align: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 16px 0;
+    color: var(--text-2) !important;
+    border-bottom: 1px solid var(--border);
+    transition: color .2s, background .2s;
   }
+  .nav-links li:first-child a { border-top: 1px solid var(--border); }
   .nav-links a:hover,
-  .nav-links a.active { color: var(--text) !important; }
+  .nav-links a.active {
+    color: var(--text) !important;
+    background: var(--bg-card);
+  }
 
-  /* Hide right controls, show burger */
   .nav-right { display: none; }
-  .burger    { display: flex; }
+  .burger    { display: flex; z-index: 1001; }
 
-  /* Lang + CTA appear at bottom of open mobile menu */
+  /* Cotizar + idioma dentro del menÃº abierto */
   .nav-links.open ~ .nav-right {
     display: flex;
     position: fixed;
-    bottom: 36px;
+    bottom: 40px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1001;
     gap: 12px;
+    white-space: nowrap;
   }
 
-  /* --- Hero --- */
-  #hero { padding: 100px 0 64px; }
-  .hero-overlay { background: rgba(8,12,20,.9); }
-  .hero-h1 { font-size: clamp(1.75rem, 6vw, 2.4rem); }
-  .hero-sub { font-size: .95rem; }
-  .hero-eyebrow { font-size: .7rem; }
+  /* ---- Hero: diseÃ±o limpio para mÃ³vil ---- */
+  #hero {
+    min-height: 100svh; /* safe viewport height */
+    padding: 96px 0 56px;
+    align-items: flex-end; /* text at bottom, feels more natural */
+  }
+
+  /* En mÃ³vil quitamos la imagen horizontal y usamos gradiente CSS */
+  .hero-photo { display: none; }
+  .hero-overlay {
+    background:
+      /* LÃ­neas de cÃ³digo simuladas como textura */
+      repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 28px,
+        rgba(91,156,246,.025) 28px,
+        rgba(91,156,246,.025) 29px
+      ),
+      /* Gradiente de fondo principal */
+      linear-gradient(
+        160deg,
+        #0a0f1e 0%,
+        #080c14 40%,
+        #0c1018 100%
+      );
+    /* Siempre ocupa todo */
+    position: absolute; inset: 0; z-index: 1;
+  }
+
+  /* Acento azul sutil arriba a la derecha */
+  .hero-overlay::after {
+    content: '';
+    position: absolute;
+    top: -80px; right: -60px;
+    width: 280px; height: 280px;
+    background: radial-gradient(circle, rgba(91,156,246,.12) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  /* Acento Ã¡mbar abajo a la izquierda */
+  .hero-overlay::before {
+    content: '';
+    position: absolute;
+    bottom: -40px; left: -40px;
+    width: 220px; height: 220px;
+    background: radial-gradient(circle, rgba(232,168,76,.07) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .hero-inner {
+    grid-template-columns: 1fr;
+    text-align: left; /* Left-aligned feels more native on phone */
+    align-items: flex-end;
+  }
+
+  .hero-right { display: none; }
+
+  .hero-eyebrow {
+    font-size: .68rem;
+    padding: 4px 10px;
+    margin-bottom: 16px;
+  }
+
+  .hero-h1 {
+    font-size: clamp(1.8rem, 7vw, 2.6rem);
+    line-height: 1.18;
+    margin-bottom: 14px;
+  }
+
+  .hero-sub {
+    font-size: .93rem;
+    max-width: 100%;
+    margin-bottom: 24px;
+    line-height: 1.75;
+  }
+
   .hero-btns {
     flex-direction: column;
-    align-items: center;
     gap: 10px;
-    margin-bottom: 36px;
+    margin-bottom: 32px;
   }
   .hero-btns .btn {
     width: 100%;
-    max-width: 320px;
     justify-content: center;
+    padding: 15px 20px;
+    font-size: .95rem;
+    border-radius: var(--r-md);
   }
+
   .hero-trust {
-    gap: 8px;
+    flex-direction: column;
+    gap: 7px;
+    align-items: flex-start;
   }
-  .trust-row {
+  .trust-row { font-size: .77rem; }
+
+  /* ---- SecciÃ³n headers ---- */
+  .s-head { margin-bottom: 36px; }
+  .s-title { font-size: 1.6rem; }
+  .s-desc  { font-size: .9rem; }
+
+  /* ---- Servicios: tarjeta horizontal en mÃ³vil ---- */
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .svc-card {
+    padding: 18px 16px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto auto;
+    column-gap: 14px;
+    row-gap: 4px;
+    border-left: 3px solid transparent;
+  }
+  .svc-card:hover { transform: none; border-left-color: var(--blue); }
+  .svc-icon {
+    width: 38px; height: 38px;
+    margin-bottom: 0;
+    grid-row: 1 / 3;
+    grid-column: 1;
+    align-self: center;
+  }
+  .svc-title {
+    grid-column: 2; grid-row: 1;
+    font-size: .95rem;
+    margin-bottom: 0;
+    align-self: end;
+  }
+  .svc-desc {
+    grid-column: 2; grid-row: 2;
+    font-size: .8rem;
+    margin-bottom: 0;
+    line-height: 1.5;
+  }
+  .svc-link {
+    grid-column: 1 / -1; grid-row: 3;
+    margin-top: 10px;
     font-size: .78rem;
-    justify-content: center;
+    padding-left: 52px; /* align with title */
   }
 
-  /* --- Section headers --- */
-  .s-head { margin-bottom: 40px; }
+  /* ---- Por quÃ© elegirnos ---- */
+  .why-grid { grid-template-columns: 1fr; gap: 10px; }
+  .why-card {
+    padding: 18px 16px;
+    gap: 14px;
+  }
+  .why-ico { min-width: 40px; height: 40px; }
+  .why-card h3 { font-size: .92rem; }
+  .why-card p  { font-size: .82rem; }
 
-  /* --- Services: 2 cols on mid-mobile --- */
-  .services-grid { grid-template-columns: repeat(2,1fr); gap:14px; }
-  .svc-card { padding: 22px 18px; }
+  /* ---- Proceso: lista numerada compacta ---- */
+  .process-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .step {
+    padding: 18px 16px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .step-num {
+    font-size: 2.2rem;
+    margin-bottom: 0;
+    min-width: 48px;
+    color: rgba(91,156,246,.2);
+  }
+  .step-ico { display: none; } /* hide icon on mobile, number is enough */
+  .step-content { flex: 1; }
+  .step h3 { font-size: .92rem; margin-bottom: 3px; }
+  .step p  { font-size: .8rem; line-height: 1.5; }
 
-  /* --- Why/Process: single col --- */
-  .why-grid     { grid-template-columns: 1fr; gap:14px; }
-  .process-grid { grid-template-columns: repeat(2,1fr); gap:14px; }
+  /* ---- Portfolio ---- */
+  .coming-wrap { grid-template-columns: 1fr; gap: 16px; }
+  .coming-card { padding: 28px 20px; }
+  .ph-stack { gap: 10px; }
+  .ph-card { padding: 20px 16px; }
 
-  /* --- Portfolio --- */
-  .coming-wrap { grid-template-columns: 1fr; }
-
-  /* --- CTA buttons --- */
+  /* ---- CTA ---- */
+  .cta-inner h2 { font-size: 1.55rem; }
+  .cta-inner p  { font-size: .9rem; }
   .cta-btns {
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
     gap: 10px;
   }
   .cta-btns .btn {
     width: 100%;
-    max-width: 300px;
     justify-content: center;
+    font-size: .95rem;
+    padding: 15px 20px;
   }
 
-  /* --- Footer --- */
-  .footer-grid { grid-template-columns: 1fr 1fr; gap: 28px; padding-bottom: 40px; }
-  .f-brand { grid-column: 1 / -1; } /* brand spans full width */
-  .f-bottom { flex-direction: column; gap: 14px; text-align: center; }
+  /* ---- Footer ---- */
+  #footer { padding-top: 48px; }
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding-bottom: 36px;
+  }
+  .f-brand { text-align: center; }
+  .f-brand .nav-logo { justify-content: center; }
+  .f-brand p { max-width: 280px; margin: 8px auto 0; }
+  .f-col h4 { margin-bottom: 10px; }
+  .f-col ul { gap: 6px; }
+  .f-col ul a { font-size: .85rem !important; }
+  .f-contacts a { font-size: .82rem !important; }
+  .f-bottom {
+    flex-direction: column;
+    gap: 14px;
+    text-align: center;
+    padding: 20px 0;
+  }
   .f-social { justify-content: center; }
-
-  /* --- Social icons: bigger tap target --- */
-  .soc { width: 40px; height: 40px; font-size: 1.05rem; }
+  .soc { width: 42px; height: 42px; font-size: 1.1rem; }
 }
 
-/* ---------- Small mobile (≤480px) ---------- */
+/* ============================================================
+   SMALL MOBILE (â‰¤480px)
+   ============================================================ */
 @media (max-width:480px) {
   :root {
-    --section-py: 52px;
+    --section-py: 48px;
     --px: 16px;
   }
 
-  /* Hero */
-  .hero-h1 { font-size: 1.7rem; letter-spacing: -.02em; }
-  .hero-sub { font-size: .9rem; }
-  .hero-eyebrow { padding: 4px 11px; font-size: .68rem; }
-  .hero-btns .btn { max-width: 100%; }
+  .hero-h1    { font-size: 1.65rem; }
+  .hero-sub   { font-size: .88rem; }
+  .s-title    { font-size: 1.4rem; }
 
-  /* Services: single column */
-  .services-grid { grid-template-columns: 1fr; gap:12px; }
+  .svc-card   { padding: 16px 14px; }
+  .why-card   { padding: 16px 14px; gap: 12px; }
+  .step       { padding: 16px 14px; }
 
-  /* Process: single column */
-  .process-grid { grid-template-columns: 1fr; gap:12px; }
-
-  /* Section titles */
-  .s-title { font-size: 1.55rem; }
-
-  /* Cards: tighter padding */
-  .svc-card  { padding: 20px 16px; }
-  .why-card  { padding: 20px 16px; }
-  .step      { padding: 20px 16px; }
-
-  /* CTA */
-  .cta-inner h2 { font-size: 1.5rem; }
-  .cta-btns .btn { max-width: 100%; }
-
-  /* Footer: single column */
-  .footer-grid { grid-template-columns: 1fr; gap: 24px; }
-  #footer { padding-top: 48px; }
-
-  /* Buttons: full width */
-  .btn { padding: 13px 20px; }
-  .btn-lg { padding: 14px 22px; font-size: .9rem; }
-
-  /* Code window (hidden on mobile anyway but just in case) */
-  .code-window { font-size: .72rem; }
+  .coming-card { padding: 24px 16px; }
+  .cta-inner h2 { font-size: 1.4rem; }
 }
 
-/* ---------- Very small (≤360px) ---------- */
+/* ============================================================
+   VERY SMALL (â‰¤360px)
+   ============================================================ */
 @media (max-width:360px) {
   :root { --px: 14px; }
-  .hero-h1 { font-size: 1.5rem; }
-  .s-title  { font-size: 1.35rem; }
+  .hero-h1  { font-size: 1.45rem; }
+  .s-title  { font-size: 1.25rem; }
   .nav-logo-text { font-size: .9rem; }
+  .hero-eyebrow  { font-size: .62rem; }
 }
 
 /* ==================== SCROLLBAR ==================== */
